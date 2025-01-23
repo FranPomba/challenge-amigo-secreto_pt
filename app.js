@@ -12,3 +12,11 @@ function adicionarAmigo() {
         input.value = "";
     }
 }
+
+function atualizarLista() {
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = "";
+    for (let i = 0; i < nomes.length; i++) {
+        lista.innerHTML += `<li> ${nomes[i]} </li>`
+    }
+}
